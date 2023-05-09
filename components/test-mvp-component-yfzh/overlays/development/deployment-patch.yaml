@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-yfzh
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:3b17d133ec82f91f4240e3aed7ec35be8751985a32459333e5ef5c905d93705b
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
